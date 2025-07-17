@@ -18,6 +18,11 @@ This folder contains lecture-wise notes that explain basic simulation ideas in v
 - [Lecture 1 – What is this course about?](./Lectures/lecture1.md)
 - [Lecture 2 – Founder](./Lectures/lecture2.md)
 - [Lecture 3 – Blackbox](./Lectures/lecture3.md)
+- [Lecture 3 – Blackbox](./Lectures/lecture3.md)
+
+- [Lecture 3 – Blackbox](./Lectures/lecture3.md)
+
+Finite Element Analysis (FEA): Introduction
 
 > 📌 More lectures will be added as I progress through the course.
 

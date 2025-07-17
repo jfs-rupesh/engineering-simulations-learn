@@ -64,3 +64,68 @@ If you don’t understand the physics or the math behind the simulation, you may
 | Outputs | Results like color plots or data |
 | Danger | Trusting results blindly without knowing the “why” |
 
+
+# Lecture 4 – What's Under the Black Box?
+
+## 🎯 Goal of This Lecture
+
+We often treat simulation tools like a **black box** — we put in inputs and get out results without really knowing what happens inside.
+
+This lecture explains **what’s actually going on inside the simulation tool** — so we can make smarter decisions and trust our results.
+
+---
+
+## 🔍 What’s Inside the Black Box?
+
+### 1. **It doesn't solve the real-world problem directly.**
+Instead, it solves a **mathematical model** of the physical problem.
+
+### 2. **The math model is built from:**
+- 📐 Geometry (shape of the object)
+- 🔧 Boundary conditions (forces, constraints, temperatures, etc.)
+- ⚙️ Material properties (steel, air, rubber, etc.)
+- 📜 Physical laws (like equilibrium or conservation)
+
+> So the tool turns your inputs into equations — **not real physics**, but math based on real physics.
+
+---
+
+## 🧠 What You Need to Know
+
+| Concept           | Meaning |
+|------------------|---------|
+| **Mathematical model** | A simplified version of the physical problem written in equations |
+| **Numerical solution** | The computer's way of solving the math equations approximately |
+| **Selected variables** | The simulation tool only solves for values at certain points (not everywhere) |
+| **Post-processing** | Pretty color pictures are made from those calculated points (not directly measured) |
+
+---
+
+## 📝 Why It Matters
+
+- If you don’t know what variables the tool is solving for — and **where** — you might **misinterpret the results**
+- For example: The tool might only calculate stress at **corners**, and everything else is estimated
+- You also need to know if your **hand calculations or test data** are close to what the tool is expected to produce
+
+---
+
+## 📌 Key Insight
+
+> A simulation tool doesn't solve physics directly.  
+> It solves a math version of physics, with assumptions and approximations.
+
+So to use the tool correctly, you must:
+- Know what **inputs** you're giving
+- Understand what **outputs** the tool is actually calculating
+- Compare those outputs with **expected trends** or even **experimental data**
+
+---
+
+## 🔄 This Leads Into: Pre-Analysis
+
+The next lecture focuses on what we do **before using the tool** — this is called **Pre-Analysis**, and it helps us:
+- Predict results
+- Double-check the setup
+- Catch issues early
+
+
